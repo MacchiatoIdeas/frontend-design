@@ -6750,7 +6750,7 @@ button.close {
 }
 .box-alt .box-jumbo {
   text-align: center;
-  font-size: 46px;
+  font-size: 52px;
 }
 .box-alt .box-body {
   text-align: center;
@@ -6814,6 +6814,7 @@ button.close {
 .navbar-default {
   background-color: #fff;
   border: 0;
+  font-size: 20px;
 }
 .glyphicon.step {
   margin-right: 8px;
