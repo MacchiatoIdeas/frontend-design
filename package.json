@@ -18,7 +18,6 @@
   "homepage": "https://github.com/MacchiatoIdeas/frontend-design#readme",
   "devDependencies": {
     "express": "^4.15.4",
-    "express-livereload": "0.0.24",
     "less": "^2.7.2"
   }
 }
