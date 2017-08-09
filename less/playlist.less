@@ -1,0 +1,34 @@
+.playlist-item {
+  background-color: #fff;
+  border: 1px @playlist-border-color solid;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  border-bottom: 2px @playlist-border-color-dark solid;
+  font-size: 16px;
+
+  .playlist-item-body {
+    padding: 16px;
+  }
+  .progress {
+    height: 4px;
+    border-radius: 0 0 5px 5px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .playlist-item-tag {
+    float: right;
+    font-weight: bold;
+    color: @playlist-tag-color;
+  }
+}
+.playlist-accents {
+  .playlist-item {
+    border-right: 4px @playlist-border-color solid;
+  }
+}
+.playlist-progress {
+  .playlist-item {
+    border-bottom: 1px @playlist-border-color solid;
+  }
+}
