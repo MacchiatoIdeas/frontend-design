@@ -6763,6 +6763,14 @@ button.close {
   border-bottom: 2px #ccc solid;
   font-size: 16px;
 }
+.playlist-item a {
+  color: #737373;
+  text-decoration: none;
+  font-weight: bold;
+}
+.playlist-item a:hover .playlist-item-body {
+  color: #333333;
+}
 .playlist-item .playlist-item-body {
   padding: 16px;
 }
@@ -6783,6 +6791,22 @@ button.close {
 }
 .playlist-progress .playlist-item {
   border-bottom: 1px #ddd solid;
+}
+.playlist-compact .playlist-item {
+  margin-bottom: 0;
+  border-bottom: 0;
+  border-radius: 0;
+  transition: 0.5s;
+}
+.playlist-compact .playlist-item:first-child {
+  border-radius: 5px 5px 0 0;
+}
+.playlist-compact .playlist-item:last-child {
+  border-bottom: 1px #ddd solid;
+  border-radius: 0 0 5px 5px;
+}
+.playlist-compact .playlist-item:hover {
+  padding-left: 5px;
 }
 .panel-body {
   font-size: 18px;

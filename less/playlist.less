@@ -6,6 +6,18 @@
   border-bottom: 2px @playlist-border-color-dark solid;
   font-size: 16px;
 
+  a {
+    color: lighten(@text-color, 25%);
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      .playlist-item-body {
+        color: @text-color;
+      }
+    }
+  }
+
   .playlist-item-body {
     padding: 16px;
   }
@@ -30,5 +42,24 @@
 .playlist-progress {
   .playlist-item {
     border-bottom: 1px @playlist-border-color solid;
+  }
+}
+.playlist-compact {
+  .playlist-item {
+    margin-bottom: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    transition: 0.5s;
+
+    &:first-child {
+      border-radius: 5px 5px 0 0;
+    }
+    &:last-child {
+      border-bottom: 1px @playlist-border-color solid;
+      border-radius: 0 0 5px 5px;
+    }
+    &:hover {
+      padding-left: 5px;
+    }
   }
 }
