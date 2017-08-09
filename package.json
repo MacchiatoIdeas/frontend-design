@@ -4,7 +4,7 @@
   "description": "frontend design",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "less": "lessc less/index.less public/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/MacchiatoIdeas/frontend-design#readme",
   "devDependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "express-livereload": "0.0.24",
+    "less": "^2.7.2"
   }
 }
