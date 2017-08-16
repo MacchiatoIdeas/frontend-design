@@ -19,8 +19,8 @@
     <![endif]-->
   </head>
 
-  <body>
-    <nav class="navbar navbar-default">
+  <body class="viewer">
+    <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-target" aria-expanded="false">
@@ -49,90 +49,66 @@
       </div>
     </nav>
 
-    <div class="container" style="margin-top: 32px">
-        <h1 class="page-header">Materias</h1>
+    <div class="container-fluid content">
+    <div class="row">
+      <div class="col-xs-12 document-toolbar">
+        <ul class="nav nav-pills">
+          <li role="presentation"><a href="equation-systems.html">Volver</a></li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="page">
-          <div class="col-sm-4">
-            <div class="box" style="border-bottom-color: #6699dd">
-              <a href="mathematics.html">
-                <img src="http://lorempixel.com/400/150/abstract/0" class="box-thumbnail" alt="">
+      <div class="row">
+        <div class="col-sm-3 document-sidebar no-padding">
+          <div class="box blue">
+            <a href="mathematics.html">
+              <img src="http://lorempixel.com/400/150/abstract/0" class="box-thumbnail" alt="">
 
-                <div class="box-body">
-                  <h1>Matemáticas</h1>
+              <div class="box-body">
+                <h1>Matemáticas</h1>
+              </div>
+            </a>
+          </div>
+
+          <div class="playlist playlist-compact no-padding">
+            <div class="playlist-item">
+              <a href="#">
+                <div class="playlist-item-body">
+                  Ecuaciones Diferenciales
                 </div>
               </a>
             </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box" style="border-bottom-color: #d9534f">
-              <a href="">
-                <img src="http://lorempixel.com/400/150/abstract/1" class="box-thumbnail" alt="">
-
-                <div class="box-body">
-                  <h1>Lenguage</h1>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box" style="border-bottom-color: #614126">
-              <a href="">
-                <img src="http://lorempixel.com/400/150/abstract/2" class="box-thumbnail" alt="">
-
-                <div class="box-body">
-                  <h1>Historia</h1>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box" style="border-bottom-color: #7AAA49">
-              <a href="">
-                <img src="http://lorempixel.com/400/150/abstract/3" class="box-thumbnail" alt="">
-
-                <div class="box-body">
-                  <h1>Biología</h1>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-4">
-            <div class="box" style="border-bottom-color: #FFA500">
-              <a href="">
-                <img src="http://lorempixel.com/400/150/business/4" class="box-thumbnail" alt="">
-
-                <div class="box-body">
-                  <h1>Química</h1>
+            <div class="playlist-item">
+              <a href="#">
+                <div class="playlist-item-body">
+                  2ª Sección
                 </div>
               </a>
             </div>
           </div>
         </div>
 
-        <div class="unit-list" style="display: none">
-          <div class="col-sm-3 field-target"></div>
-          <div class="col-sm-9">
-            <h2>Unidades</h2>
-
-            <hr>
-
-            <div class="list-group">
-              <a href="#" class="list-group-item">Ecuaciones Diferenciales</a>
-              <a href="#" class="list-group-item">Trigonometría</a>
+        <div class="col-sm-9 document no-padding">
+          <div>
+            <div class="body" w3-include-html="_content.html"></div>
+            <div class="body" w3-include-html="_content.html"></div>
+            <div class="footer appunta-bg">
+              <h4 ><small>Creado por:</small><br><span>Hernán Herreros Niño</span></h4>
+              <div class="clearfix" />
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- W3school script for html import -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      w3.includeHTML();
+    </script>
   </body>
 </html>
