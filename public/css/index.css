@@ -6862,14 +6862,14 @@ button.close {
 .playlist-compact .playlist-item:hover {
   padding-left: 5px;
 }
-body.viewer {
-  padding-top: 80px;
-}
-body.viewer .navbar {
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+.container {
+  margin-top: 24px;
 }
 .container.content {
   margin-top: 32px;
+}
+.container-fluid.content {
+  margin-top: 24px;
 }
 .panel-body {
   font-size: 18px;
@@ -6878,6 +6878,7 @@ body.viewer .navbar {
   background-color: #fff;
   border: 0;
   font-size: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 .glyphicon.step {
   margin-right: 8px;
@@ -6900,14 +6901,12 @@ body.viewer .navbar {
   font-size: 16px;
 }
 .navbar-nav > li > a.active {
-  color: #4CA2E8 !important;
-  border-bottom: 3px solid;
-  padding-bottom: 12px;
+  color: #333 !important;
   box-sizing: border-box;
-  font-weight: normal !important;
+  font-weight: bold;
 }
 .navbar-nav > li > a {
-  line-height: 50px;
+  line-height: 40px;
   text-transform: uppercase;
 }
 .navbar {
@@ -6922,11 +6921,11 @@ body.viewer .navbar {
   margin-left: -174px !important;
   /* 50% of your logo width */
   display: block;
-  line-height: 50px;
-  padding: 15px;
+  line-height: 40px;
+  padding: 14px;
 }
 .brand > img {
-  height: 50px;
+  height: 40px;
 }
 .box.blue {
   border-bottom-color: #6699dd;
@@ -6953,35 +6952,52 @@ body.viewer .navbar {
 .document-sidebar .playlist {
   border: none;
 }
-.document {
-  background: #fff;
+.document-badge {
+  border-radius: 5px;
+  padding: 8px;
+  padding-top: 92px;
+  border-bottom: 2px #ccc solid;
+  background-color: rgba(255, 255, 255, 0.2);
 }
-.document .body {
-  font-family: 'Helvetica Neue';
+.document-badge .backgrounded {
+  border-radius: 5px;
+  z-index: -1;
+}
+.document-badge small {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.document-badge h4 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.document-body {
   padding: 20px;
   color: #777777;
   font-size: 20px !important;
   text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 2px #ccc solid;
 }
-.document .body h1 {
+.document-body h1 {
   border-bottom: 1px solid #d9d9d9;
   width: 100%;
   font-size: 36px;
   margin-bottom: 20px;
   text-align: left;
+  margin-top: 0px;
 }
-.document .body p {
+.document-body p {
   margin-top: 25px;
   padding: 0px 10px;
   font-weight: 300;
   text-align: justify;
   line-height: 25px !important;
 }
-.document .body img {
+.document-body img {
   height: 300px;
-}
-.document .footer {
-  padding: 10px;
 }
 .appunta-bg {
   position: relative;
@@ -7002,25 +7018,6 @@ body.viewer .navbar {
 }
 .no-padding {
   padding: 0px !important;
-}
-/*
- * Document - Option 2
- */
-.document2 {
-  background: none;
-  padding: 0px 15px !important;
-}
-.document2 > div {
-  background: #fff;
-  border-radius: 3px;
-  margin: 20px 0px;
-  overflow: hidden;
-}
-.document2 .footer {
-  padding: 2px 10px;
-}
-.document2 .footer .appunta-bg:before {
-  border-radius: 0px 0px 3px 3px;
 }
 .head-link {
   padding: 11px;

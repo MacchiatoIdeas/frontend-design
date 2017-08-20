@@ -19,8 +19,8 @@
     <![endif]-->
   </head>
 
-  <body class="viewer">
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <body>
+    <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-target" aria-expanded="false">
@@ -50,30 +50,47 @@
     </nav>
 
     <div class="container-fluid content">
-    
-
       <div class="row">
-        <div class="col-sm-offset-2 col-sm-8 document no-padding document2">
-          <div>
-            <div class="body" w3-include-html="_content.html"></div>
-            <div class="body" w3-include-html="_content.html"></div>
-            <div class="footer appunta-bg">
-              <h4 ><small>Creado por:</small><br><span>Hernán Herreros Niño</span></h4>
-              <div class="clearfix" />
+        <div class="col-sm-8">
+          <a href="#" class="head-link"><span class="glyphicon glyphicon-star"></span> Marcar</a>
+          <h2 class="page-header">Aprendiendo con Dora</h2>
+          <div class="document-body" w3-include-html="_content.html"></div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="document-badge" style="position: relative">
+            <div class="backgrounded" style="background-image: url('http://images.all-free-download.com/images/graphiclarge/green_blurred_background_200164.jpg');"></div>
+            <small>Creado por:</small>
+            <h4>Marcelo Ignacio Jara Almeyda</h4>
+          </div>
+
+          <div class="playlist playlist-compact" style="padding-top: 16px;">
+            <div class="playlist-item">
+              <a href="#">
+                <div class="playlist-item-body">
+                  Seccion 1
+                </div>
+              </a>
+            </div>
+
+            <div class="playlist-item">
+              <a href="#">
+                <div class="playlist-item-body">
+                  Seccion 2
+                </div>
+              </a>
+            </div>
+
+            <div class="playlist-item">
+              <a href="#">
+                <div class="playlist-item-body">
+                  Seccion 3
+                </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-offset-2 col-sm-8">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              Comentarios
-            </div>
-            <div class="panel-body">
-            Sección de comentarios (?)
-            </div>
-          </div>
-        </div>
     </div>
 
     <!-- W3school script for html import -->
