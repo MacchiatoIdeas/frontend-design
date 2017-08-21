@@ -24,6 +24,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-cog-v3:before {
+  content: "\e904";
+}
+.icon-search-v3:before {
+  content: "\e909";
+}
+.icon-play-v3:before {
+  content: "\e906";
+}
+.icon-cog-v2:before {
+  content: "\e902";
+}
+.icon-search-v2:before {
+  content: "\e903";
+}
 .icon-cog:before {
   content: "\e900";
 }
