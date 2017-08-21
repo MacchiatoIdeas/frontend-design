@@ -24,6 +24,10 @@
   margin-right: 8px;
 }
 
+.step {
+  margin-right: 8px;
+}
+
 .page-header {
   margin-top: 0;
   border-color: #ccc;
@@ -39,10 +43,18 @@
 .list-group.main {
   border-radius: @border-radius-base;
   border-bottom: 2px #ccc solid;
-}
 
-.list-group.main > .list-group-item {
-  font-size: 16px;
+  .list-group-item {
+    font-size: 18px;
+  }
+}
+.list-group.main-inverted {
+  .list-group.main();
+
+  .list-group-item.active {
+    border-right: 1px #ddd solid;
+    border-left-width: 4px;
+  }
 }
 
 .navbar-nav > li {
@@ -74,7 +86,7 @@
     display: block;
     line-height: 40px;
     padding: 14px;
-    
+
     & > img {
       height: 40px;
     }
