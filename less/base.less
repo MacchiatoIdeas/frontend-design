@@ -17,6 +17,7 @@
   border: 0;
   font-size: 20px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
 .glyphicon.step {
@@ -73,8 +74,19 @@
     display: block;
     line-height: 40px;
     padding: 14px;
+    
     & > img {
       height: 40px;
+    }
+
+    @media @smartphones {
+      height: 100%;
+      margin-left: -84px !important;
+
+      img {
+        height: 22px;
+        vertical-align: top;
+      }
     }
 }
 
