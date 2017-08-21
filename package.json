@@ -16,7 +16,7 @@
     "url": "https://github.com/MacchiatoIdeas/frontend-design/issues"
   },
   "homepage": "https://github.com/MacchiatoIdeas/frontend-design#readme",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.15.4",
     "less": "^2.7.2"
   }
