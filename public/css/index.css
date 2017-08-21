@@ -6807,7 +6807,7 @@ button.close {
   border: 1px #ddd solid;
   border-radius: 5px;
   margin-bottom: 8px;
-  border-bottom: 2px #ccc solid;
+  /*border-bottom: 2px @playlist-border-color-dark solid;*/
   font-size: 16px;
 }
 .playlist-item.active {
@@ -6823,6 +6823,20 @@ button.close {
 }
 .playlist-item .playlist-item-body {
   padding: 16px;
+  padding-left: 37px;
+  position: relative;
+  overflow: hidden;
+}
+.playlist-item .playlist-item-body .step {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  line-height: 53px;
+  padding: 0px 10px;
+  color: #fff;
+  border-radius: 4px 0px 0px 4px;
+  background: #4ca2e8;
 }
 .playlist-item .progress {
   height: 4px;
@@ -6841,6 +6855,9 @@ button.close {
 }
 .playlist-progress .playlist-item {
   border-bottom: 1px #ddd solid;
+}
+.playlist-progress .playlist-item .step {
+  border-bottom-left-radius: 0;
 }
 .playlist-compact {
   border-bottom: 2px #ccc solid;
