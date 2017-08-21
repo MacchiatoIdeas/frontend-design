@@ -6807,7 +6807,7 @@ button.close {
   border: 1px #ddd solid;
   border-radius: 5px;
   margin-bottom: 8px;
-  /*border-bottom: 2px @playlist-border-color-dark solid;*/
+  border-bottom: 2px #ccc solid;
   font-size: 16px;
 }
 .playlist-item.active {
@@ -6826,6 +6826,13 @@ button.close {
   padding-left: 37px;
   position: relative;
   overflow: hidden;
+  display: block;
+}
+.playlist-item .playlist-item-body.playlist-item-link {
+  color: #000;
+}
+.playlist-item .playlist-item-body strong {
+  margin-left: 8px;
 }
 .playlist-item .playlist-item-body .step {
   position: absolute;
@@ -6836,6 +6843,7 @@ button.close {
   padding: 0px 10px;
   color: #fff;
   border-radius: 4px 0px 0px 4px;
+  margin-right: 8px;
   background: #4ca2e8;
 }
 .playlist-item .progress {
@@ -6901,6 +6909,9 @@ button.close {
 .glyphicon.step {
   margin-right: 8px;
 }
+.step {
+  margin-right: 8px;
+}
 .page-header {
   margin-top: 0;
   border-color: #ccc;
@@ -6915,8 +6926,19 @@ button.close {
   border-radius: 4px;
   border-bottom: 2px #ccc solid;
 }
-.list-group.main > .list-group-item {
-  font-size: 16px;
+.list-group.main .list-group-item {
+  font-size: 18px;
+}
+.list-group.main-inverted {
+  border-radius: 4px;
+  border-bottom: 2px #ccc solid;
+}
+.list-group.main-inverted .list-group-item {
+  font-size: 18px;
+}
+.list-group.main-inverted .list-group-item.active {
+  border-right: 1px #ddd solid;
+  border-left-width: 4px;
 }
 .navbar-nav > li > a.active {
   color: #333 !important;

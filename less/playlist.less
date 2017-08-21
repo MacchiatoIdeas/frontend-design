@@ -3,7 +3,7 @@
   border: 1px @playlist-border-color solid;
   border-radius: 5px;
   margin-bottom: 8px;
-  /*border-bottom: 2px @playlist-border-color-dark solid;*/
+  border-bottom: 2px @playlist-border-color-dark solid;
   font-size: 16px;
 
   &.active {
@@ -22,11 +22,21 @@
     }
   }
 
+
   .playlist-item-body {
     padding: 16px;
     padding-left: 37px;
     position: relative;
     overflow: hidden;
+    display: block;
+
+    &.playlist-item-link {
+      color: #000;
+    }
+
+    strong {
+      margin-left: 8px;
+    }
 
     .step {
       position: absolute;
@@ -37,6 +47,7 @@
       padding: 0px 10px;
       color: #fff;
       border-radius: 4px 0px 0px 4px;
+      margin-right: 8px;
 
       background: #4ca2e8;
     }
