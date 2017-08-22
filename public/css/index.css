@@ -6887,6 +6887,9 @@ button.close {
 .playlist-compact .playlist-item:hover {
   padding-left: 5px;
 }
+body {
+  background: #e8ebef;
+}
 .container {
   margin-top: 24px;
 }
