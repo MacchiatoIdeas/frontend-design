@@ -6958,11 +6958,12 @@ button.close {
 .brand {
   position: absolute;
   left: 50%;
-  margin-left: -141px !important;
+  margin-left: -36px !important;
   /* 50% of your logo width */
   display: block;
   line-height: 40px;
   padding: 14px;
+  background: rgba(0, 0, 0, 0.01);
 }
 .brand > img {
   height: 40px;
@@ -6970,7 +6971,7 @@ button.close {
 @media only screen and (max-width: 767px) {
   .brand {
     height: 100%;
-    margin-left: -84px !important;
+    margin-left: -26px !important;
   }
   .brand img {
     height: 22px;
