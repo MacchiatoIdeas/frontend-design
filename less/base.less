@@ -1,4 +1,4 @@
-body {
+body  {
   background: @body-color;
 }
 
@@ -8,6 +8,7 @@ body {
     margin-top: 32px;
   }
 }
+
 .container-fluid.content {
   margin-top: 24px;
 }
@@ -52,6 +53,7 @@ body {
     font-size: 18px;
   }
 }
+
 .list-group.main-inverted {
   .list-group.main();
 
@@ -76,35 +78,34 @@ body {
 }
 
 .navbar {
-    position: relative;
+  position: relative;
 
-    &.navbar-fixed-top {
-      position: fixed;
-    }
+  &.navbar-fixed-top {
+    position: fixed;
+  }
 }
 
 .brand {
-    position: absolute;
-    left: 50%;
-    margin-left: -36px !important;  /* 50% of your logo width */
-    display: block;
-    line-height: 40px;
-    padding: 14px;
-    background: rgba(0, 0, 0, 0.01);
+  position: absolute;
+  left: 50%;
+  margin-left: -36px !important; /* 50% of your logo width */
+  display: block;
+  line-height: 40px;
+  padding: 14px;
 
-    & > img {
-      height: 40px;
+  & > img {
+    height: 40px;
+  }
+
+  @media @smartphones {
+    height: 100%;
+    margin-left: -26px !important;
+
+    img  {
+      height: 22px;
+      vertical-align: top;
     }
-
-    @media @smartphones {
-      height: 100%;
-      margin-left: -26px !important;
-
-      img {
-        height: 22px;
-        vertical-align: top;
-      }
-    }
+  }
 }
 
 .box {
@@ -118,17 +119,17 @@ body {
   border-bottom: 1px solid #e8e8e8;
 }
 
-.document-sidebar {
+.document-sidebar  {
   & img {
     border-radius: 0 !important;
   }
 
-  & .box  {
+  & .box   {
     margin: 0;
     border-radius: 0;
   }
 
-  & .box * {
+  & .box *  {
     margin: 0;
     border-radius: 0;
   }
@@ -166,7 +167,7 @@ body {
   }
 }
 
-.document-body {
+.document-body  {
   padding: 20px;
   color: rgb(119, 119, 119);
   font-size: 20px !important;
@@ -175,7 +176,7 @@ body {
   border-radius: 5px;
   border-bottom: 2px @app-border-color-dark solid;
 
-  & h1 {
+  & h1  {
     border-bottom: 1px solid #d9d9d9;
     width: 100%;
     font-size: 36px;
@@ -200,22 +201,97 @@ body {
 .appunta-bg {
   position: relative;
 
-  &:before {
-      content: ' ';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0.4;
-      background: url('http://24.media.tumblr.com/fbb9b866b6fae08df0a37b56a82a1f37/tumblr_myqp2kubMm1svrh8zo2_1280.jpg');
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-    }
+  &:before  {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: url('http://24.media.tumblr.com/fbb9b866b6fae08df0a37b56a82a1f37/tumblr_myqp2kubMm1svrh8zo2_1280.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
 }
 
 .no-padding {
   padding: 0px !important;
+}
+
+/*
+ * New Design
+ */
+
+body {
+  background-color: #4CA2E8;
+}
+
+body, html {
+  height: 100%;
+}
+
+.navbar.navbar-default {
+  border-radius: 10px;
+}
+
+#body {
+  margin: 0px 20px;
+  padding: 0px;
+  border-bottom: 0px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.borderless, .borderless * {
+  border: none;
+}
+
+.nobg, .nobg * {
+  background: transparent;
+}
+
+section {
+  padding: 20px;
+}
+
+footer  {
+  background: #f7fafd;
+  padding: 20px;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover, footer a:focus {
+  color: darken(#6295c7, 20%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#image-subject-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#image-subject-wrapper img {
+  width: 100%;
+}
+
+
+.breadcrumb {
+  background: #eceeef;
+  padding: 15px 15px;
+  margin: 0;
+}
+
+.social-icons a {
+  color: #AAA;
+  font-size: 20pt;
 }
